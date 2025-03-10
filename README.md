@@ -1,1 +1,0 @@
-WDD131 - BYU Idaho
