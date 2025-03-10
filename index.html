@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Onesmus Maenzanise's course landing page featuring web development resources and personal information">
+    <meta name="author" content="Onesmus Maenzanise">
+    <title>WDD 131 – Dynamic Web Fundamentals - Onesmus Maenzanise</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Onesmus</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Onesmus Maenzanise</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/onesmus-maenzanise-100432252">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Onesmus Maenzanise portrait" width="200">
+            <p>My name is Onesmus Maenzanise. I am a software engineer specializing in backend development. I graduated from WeThinkCode_ and have a strong passion for problem-solving, coding, and working on innovative projects. I am currently engaged and preparing for marriage. In my free time, I enjoy working on hackathons, building projects in Golang, and exploring AI integrations.</p>
+            
+            <h3>Cape Town, South Africa</h3>
+            <p>I am originally from Zimbabwe but currently live in Cape Town, South Africa. Cape Town is known for its stunning landscapes, including Table Mountain, beautiful beaches, and rich cultural history. It is also a growing tech hub in Africa.</p>
+            <img src="images/Flag_of_South_Africa.svg" alt="Official Flag of South Africa" width="100">
+            <img src="images/Flag_of_Zimbabwe.svg" alt="Official Flag of Zimbabwe" width="130">
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <img src="images/web-dev.jpg" alt="Web Development illustration" width="200">
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Onesmus Maenzanise | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
