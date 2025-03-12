@@ -1,12 +1,13 @@
+/* Base styles (mobile first) */
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
   
   header {
     display: flex;
-    justify-content: space-between; /* Aligns h2 to left and nav to right */
+    justify-content: space-between;
     align-items: center;
     background-color: #283593;
     font-size: 20px;
@@ -59,21 +60,31 @@ body {
     text-align: center;
   }
   
-  .grid {
-    display: grid;
-  }
-  
+  /* Mobile layout - one column */
   main {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   figure {
-    margin: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  figcaption {
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
   }
   
   img {
     width: 100%;
     height: auto;
+    display: block;
   }
   
   footer {
@@ -88,6 +99,7 @@ body {
     margin: 0.5rem 0;
   }
   
+  /* Mobile menu toggle */
   @media (max-width: 768px) {
     nav ul {
       display: none;
@@ -99,6 +111,7 @@ body {
       width: 150px;
       text-align: right;
       padding: 10px;
+      z-index: 100;
     }
   
     nav ul li {
@@ -111,6 +124,22 @@ body {
   
     nav ul.active {
       display: flex;
+    }
+  }
+  
+  /* Desktop layout - 3x3 grid */
+  @media (min-width: 769px) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+    }
+  
+    figure {
+      transition: transform 0.3s ease;
+    }
+  
+    figure:hover {
+      transform: scale(1.02);
     }
   }
   

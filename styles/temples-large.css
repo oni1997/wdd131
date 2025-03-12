@@ -23,16 +23,14 @@
     #button {
         display: none;
     }
+
     main {
         max-width: 1200px;
         margin: auto;
         padding: 20px;
-        display: contents;
-    }
-
-    main {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Replace auto-fit with a fixed 3-column layout */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         justify-content: center;
         align-items: start;
