@@ -1,122 +1,180 @@
-body {
-    font-family: 'Open Sans', sans-serif;
+/* Global CSS Variables */
+:root {
+    --primary-color: #283593;
+    --secondary-color: #ffffff;
+    --accent-color: #3949ab;
+    --text-color: #333333;
+    --background-color: #f0f4f8;
+    --card-background: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Base Styles */
+  * {
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
-}
-
-header {
-    background-color: #283593;
-    color: white;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 1rem;
     text-align: center;
-}
-
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #283593;
-}
-
-header h1 {
-    color: white;
+  }
+  
+  header h1 {
     margin-bottom: 1rem;
-}
-
-nav {
+    color: var(--secondary-color);
+  }
+  
+  /* Navigation */
+  nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-nav a {
-    color: white;
+  }
+  
+  nav a {
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     transition: background-color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-    background-color: #3949ab;
+  }
+  
+  nav a:hover {
+    background-color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-main {
+  }
+  
+  /* Main */
+  main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-}
-
-.card {
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    grid-column: 1 / -1;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: var(--card-background);
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.card h2 {
+  }
+  
+  .card h2 {
     margin-top: 0;
-    border-bottom: 2px solid #283593;
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
-}
-
-.card img {
+    margin-bottom: 1rem;
+  }
+  
+  .card img {
     margin: 1rem 0;
-    border-radius: 4px;
-}
-
-.card ul {
+    border-radius: var(--border-radius);
+  }
+  
+  .card ul, .card ol {
     align-self: flex-start;
     padding-left: 1.5rem;
-}
-
-.card a {
-    color: #283593;
+    margin-bottom: 1rem;
+  }
+  
+  .card a {
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
-}
-
-.card a:hover {
-    color: #1a237e;
+  }
+  
+  .card a:hover {
+    color: var(--accent-color);
     text-decoration: underline;
-}
-
-footer {
-    background-color: #283593;
-    color: white;
+  }
+  
+  /* Weather Section */
+  .weather-icon {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .mobile-weather-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin: 0.5rem 0;
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
     main {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      gap: 1.5rem;
     }
     
     nav {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
     }
     
     nav a {
-        width: 80%;
-        text-align: center;
-        margin-bottom: 0.5rem;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 0.5rem;
     }
-}
+  }
