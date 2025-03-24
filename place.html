@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town - The Mother City</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cape Town</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Attractions</a>
+            <a href="#">Culture</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero section with responsive images -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/best-views-of-table-mountain.jpg" media="(min-width: 768px)">
+                <img src="images/best-views-of-table-mountain.jpg" alt="Scenic view of Table Mountain in Cape Town" width="100%">
+            </picture>
+        </section>
+
+        <!-- Statistics section -->
+        <section class="stats card">
+            <h2>Statistics</h2>
+            <ul>
+                <li><strong>Population:</strong> 4.6 million</li>
+                <li><strong>Province:</strong> Western Cape</li>
+                <li><strong>Official Language:</strong> English, Afrikaans, isiXhosa</li>
+                <li><strong>Currency:</strong> South African Rand (R)</li>
+                <li><strong>Area:</strong> 2,461 km²</li>
+            </ul>
+        </section>
+
+        <!-- Weather section -->
+        <section class="weather card">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/weather.png" alt="Weather icon" class="mobile-weather-icon">
+            </div>
+            <p>Current temperature: <span id="temperature">20</span>°C</p>
+            <p>Wind speed: <span id="windSpeed">10</span> km/h</p>
+            <p>Wind chill factor: <span id="windChill">Calculating...</span></p>
+        </section>
+
+        <!-- Places section -->
+        <section class="places card">
+            <h2>Must-See Places</h2>
+            <ul>
+                <li>Table Mountain</li>
+                <li>Robben Island</li>
+                <li>Victoria & Alfred Waterfront</li>
+                <li>Cape Point</li>
+                <li>Kirstenbosch Botanical Gardens</li>
+            </ul>
+        </section>
+
+        <!-- Food section -->
+        <section class="food card">
+            <h2>Famous Foods</h2>
+            <ul>
+                <li>Bunny Chow</li>
+                <li>Bobotie</li>
+                <li>Gatsby</li>
+                <li>Boerewors</li>
+                <li>Malva Pudding</li>
+            </ul>
+        </section>
+
+        <section class="info card">
+            <h2>Additional Information</h2>
+            <p>Cape Town is a port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain. It is known for its stunning landscapes, vibrant culture, and historical significance.</p>
+            <p>The city boasts breathtaking beaches, a rich wine culture, and a diverse mix of cultural influences. It is a top tourist destination for its scenic beauty and adventure activities.</p>
+            <p>For more information, visit <a href="https://www.capetown.travel/" target="_blank">Cape Town's Official Tourism Website</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Onesmus Maenzanise | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
