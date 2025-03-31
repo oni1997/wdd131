@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Onesmus Maenzanise">
+    <meta
+      name="description"
+      content="Media query learning activity Temple Album page with filtering."
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    >
+    <script src="scripts/temples-data.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <title>WDD 131 - Filtered Temple Album</title>
+  </head>
+  <body>
+    <header>
+      <h2>Temple Album</h2>
+      <nav>
+        <ul>
+          <li><a href="#" id="homeFilter">Home</a></li>
+          <li><a href="#" id="oldFilter">Old</a></li>
+          <li><a href="#" id="newFilter">New</a></li>
+          <li><a href="#" id="largeFilter">Large</a></li>
+          <li><a href="#" id="smallFilter">Small</a></li>
+        </ul>
+        <button id="button">&#9776;</button>
+      </nav>
+    </header>
+    <h1>Temple</h1>
+    <main id="templeCards">
+      <!-- Temple cards will be inserted here dynamically -->
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Onesmus Maenzanise | South Africa</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
