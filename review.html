@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Product Review Confirmation - Onesmus Maenzanise">
+    <meta name="author" content="Onesmus Maenzanise">
+    <title>Review Submitted - Onesmus Maenzanise</title>
+    <link rel="stylesheet" href="styles/bases.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/onesmus-maenzanise-100432252">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation-container">
+            <div class="confirmation-message">
+                <h2>Thank You for Your Review!</h2>
+                <p>Your feedback is valuable and helps other customers make informed decisions.</p>
+                
+                <div class="review-summary">
+                    <h3>Review Summary</h3>
+                    <div id="review-details">
+                        <!-- This will be populated with JS -->
+                    </div>
+                </div>
+                
+                <div class="review-counter">
+                    <p>You have submitted <span id="review-count">0</span> reviews.</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="form.html" class="btn">Submit Another Review</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Onesmus Maenzanise | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
