@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Update Current Year
-    const currentYear = new Date().getFullYear();
-    const yearElements = document.querySelectorAll("#currentYear");
-    yearElements.forEach(element => {
-        element.textContent = currentYear;
+    // Add lazy loading to all images
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.loading = 'lazy';
     });
 
     // Navigation Active State
@@ -14,4 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             link.classList.add('active');
         }
     });
+
+    // Update year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
